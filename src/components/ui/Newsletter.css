@@ -1,0 +1,128 @@
+/* ============================================
+   Newsletter — Inline Editorial
+   ============================================ */
+
+.nl-section {
+  padding: var(--space-12) 0;
+}
+
+.nl-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-10);
+  padding: var(--space-10) var(--space-10);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  background: var(--bg-secondary);
+}
+
+.nl-text {
+  flex: 1;
+}
+
+.nl-eyebrow {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.nl-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.nl-desc {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  max-width: 380px;
+  line-height: 1.6;
+}
+
+.nl-form-wrap {
+  flex-shrink: 0;
+}
+
+.nl-form {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.nl-input {
+  padding: var(--space-3) var(--space-5);
+  background: var(--bg-input);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  width: 260px;
+  transition: all var(--transition-base);
+}
+
+.nl-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.nl-input:focus {
+  border-color: var(--accent-violet);
+  box-shadow: 0 0 0 3px var(--accent-violet-glow);
+}
+
+.nl-btn {
+  padding: var(--space-3) var(--space-6);
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.nl-btn:hover {
+  background: var(--accent-violet-light);
+  color: white;
+}
+
+.nl-success {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-full);
+  color: var(--accent-emerald-light);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 768px) {
+  .nl-row {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .nl-desc {
+    max-width: 100%;
+  }
+
+  .nl-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nl-input {
+    width: 100%;
+  }
+}
