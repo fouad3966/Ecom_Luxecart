@@ -20,8 +20,10 @@ const PORT = process.env.PORT || 3001;
 
 // --- Middleware ---
 
-// Security headers
+// Security headers — relaxed CSP for cross-origin API calls (Vercel → Render)
 app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
   crossOriginResourcePolicy: { policy: 'cross-origin' },
 }));
 
