@@ -2,8 +2,7 @@
  * LuxeCart API Client
  * Centralized fetch wrapper for all backend communication.
  */
-
-const API_BASE = '/api';
+const API_BASE = 'https://ecom-luxecart.onrender.com/api';
 
 /**
  * Get the stored JWT token.
