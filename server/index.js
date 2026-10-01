@@ -25,12 +25,14 @@ app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
 }));
 
-// CORS — allow dynamic origins for Vercel and local dev
+// CORS — allow specific origins for Vercel and local dev
 app.use(cors({
-  origin: function (origin, callback) {
-    // Allow all origins for the prototype
-    callback(null, true);
-  },
+  origin: [
+    'https://ecom-luxecart.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:4173',
+    'http://localhost:3000'
+  ],
   credentials: true,
 }));
 
