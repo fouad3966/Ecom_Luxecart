@@ -2,6 +2,10 @@
 
 ![LuxeCart Platform Preview](https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200&h=400)
 
+### 🌍 Live Links
+- **Live Storefront (Vercel):** [https://ecom-luxecart.vercel.app/](https://ecom-luxecart.vercel.app/)
+- **Live API Backend (Render):** [https://ecom-luxecart.onrender.com/api/health](https://ecom-luxecart.onrender.com/api/health)
+
 > A modern, full-stack e-commerce SaaS prototype demonstrating robust architecture, secure stateless authentication, and a premium, highly responsive user interface.
 
 LuxeCart is engineered as a complete end-to-end shopping platform. It features a fully dynamic customer storefront and a protected administrative dashboard for managing products, inventory, and orders. The project was built to showcase production-ready development practices, full-stack state management, and custom API design.
